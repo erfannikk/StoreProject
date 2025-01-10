@@ -23,15 +23,19 @@ export class SignalComponent {
   newJobName = signal('');
 
   addJob() {
-    if(this.newJobName().trim() === '') return;
+ try {
+  if(this.newJobName().trim() === '') return;
 
-    const newJob: Job = {
-      name: this.newJobName(),
-      completed: false
-    }
-    this.jobs.update(jobs => [...jobs, newJob])
+  const newJob: Job = {
+    name: this.newJobName(),
+    completed: false
+  }
+  this.jobs.update(jobs => [...jobs, newJob])
 
-    this.newJobName.set('')
+  this.newJobName.set('')
+ } catch (e) {
+  console.error(e);
+ }
   }
 
   toggleJobCompletion(jobIndex: number) {
