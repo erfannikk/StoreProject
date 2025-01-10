@@ -1,0 +1,17 @@
+<div class="ever">
+
+   <h1> Signal </h1>
+   <input type="text"  placeholder="enter Job" [(ngModel)]="newJobName">
+   <button (click)="addJob()">Add Job</button>
+
+   <h2> complete Job: {{ compeletedJobCount() }} / {{ jobs().length}} </h2>
+
+   <ul class="list.style">
+    @for(task of jobs(); track task; let i = $index){
+        <li>
+            <input type="checkbox" [checked]="task.completed" (change)="toggleJobCompletion(i)">
+            {{ task.name }} ({{ task.completed ? 'Completed' : 'pending' }})
+        </li>}
+   </ul>
+
+</div>
