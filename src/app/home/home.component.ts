@@ -35,7 +35,7 @@ export class HomeComponent {
   constructor(){
     
   }
-  images = [
+  image = [
     {
       imageSrc: '/Image/slider1.webp',
       imageAlt: '1',
