@@ -12,8 +12,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     MainComponent,
     SellComponent,
-    FooterComponent,
-    FooterComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
