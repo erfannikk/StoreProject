@@ -1,0 +1,16 @@
+<div class="ever">
+  <div class="para">
+    <h2>Templates Designed To Sell</h2>
+    <p>Choose from 100s of designs for every idea and industry</p>
+  </div>
+  <div class="slider-container">
+    <div class="slider">
+      @for(pic of photo;track pic.id;let i = $index){
+      <img [src]="pic.srcImg" [alt]="pic.srcAlt" class="slider-image"/>
+      }
+    </div>
+  </div>
+  <div class="example-button-row">
+    <button mat-flat-button>Browse All Templates</button>
+  </div>
+</div>

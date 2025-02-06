@@ -1,61 +1,88 @@
-*{
-    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
-}
 .ever{
-    margin-top: 5rem;
+    background-color: black;
     display: flex;
-    justify-content: center;
-    gap: 7rem;
-    text-align: right;
-    background-color: #EFF2F6;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 6.5rem;
+    padding-top: 2rem;
+    .list{
+        h2{
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            line-height: 2.2rem;
+            li{
+                color: white;
+                font-size: 12px;
+                opacity: 0.8;
+            }
+        } 
+    }
+    .list2{
+        h2{
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            line-height: 2.2rem;
+            li{
+                color: white;
+                font-size: 12px;
+                opacity: 0.8;
+            }
+        } 
+    }
+    .list3{
+        h2{
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            line-height: 2.2rem;
+            li{
+                color: white;
+                font-size: 12px;
+                opacity: 0.8;
+            }
+        } 
+    }
+    .list4{
+        h2{
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            line-height: 2.2rem;
+            li{
+                color: white;
+                font-size: 12px;
+                opacity: 0.8;
+            }
+        } 
+    }
 }
-.fast{
-    text-align: right;
-}
-.fast h2{
-    font-size: 24px;
-    font-weight: bold;
-    opacity: 0.7;
-}
-.fast ul{
-    list-style: none;
-    padding: 0;
-}
-.fast li{
-    text-decoration: none;
-    color: black;
-    opacity: 0.7;
-}
-.services{
-    text-align: right;
-}
-.services h2{
-    font-size: 24px;
-    font-weight: bold;
-    opacity: 0.7;
-}
-.services ul{
-    list-style: none;
-    padding: 0;
-}
-.services li{
-    text-decoration: none;
-    color: black;
-    opacity: 0.7;
-}
-.salino{
-    width: 31rem;
-}
-.salino h2{
-    font-size: 24px;
-    font-weight: bold;
-    opacity: 0.7;
-}
-.salino span{
-    color: #1D68E8;
-}
-.salino p{
-    opacity: 0.8;
-    font-weight: 300;
+@media screen and (max-width:768px) {
+    .ever{
+        flex-wrap: wrap;
+    }
 }

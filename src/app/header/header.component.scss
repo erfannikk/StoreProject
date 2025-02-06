@@ -1,58 +1,80 @@
-*{
-    font-family: IRANSansX, "Helvetica Neue", sans-serif !important;
+.example-form {
+ 
+  width: 100%;
 }
-.ever{
+.example-full-width {
+  width: 100%;
+}
+.ever {
+  .up {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    direction: rtl;
-    .title{
+    gap: 1rem;
+    .left {
+      width: 45rem;
+      .list {
+        list-style: none;
         display: flex;
-        align-items: center;
-        img{
-            width: 7rem;
-        }
+        gap: 2rem;
+        opacity: 0.6;
+        width: 54rem;
+      }
     }
-}
-
-.link{
-    background-color: #1D68E8;
-    width: 9rem;
-    height: 3rem;
-    border-radius: 25px;
-    color: white;
+    .icons {
+      display: none;
+    }
+    .right {
+      .list2 {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        opacity: 0.6;
+      }
+    }
+  }
+  .down {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 2rem;
     align-items: center;
-    font-weight: 300;
-    cursor: pointer;
-}
-.list-style ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    padding-left: 1rem;
-}
-.list-style li{
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
-.frm{
-    cursor: pointer;
-}
-.title h1{
-    font-size: 21px;
-    font-weight: bolder;
-}
-.title span{
-    color: #1D68E8;
-}
-@media screen and (max-width:992px) {
-    .list-style{
-        display: none;
+    .form {
+      display: flex;
+      width: 45rem;
+      form {
+        height: 3.5rem;
+        width: 41rem;
+      }
+      button {
+        border: 0;
+        background-color: #00838c;
+        color: white;
+        width: 8rem;
+      }
     }
-    .ever{
-        flex-direction: column;
+    .icon {
+      width: 15rem;
+      display: flex;
+      justify-content: space-around;
+      opacity: 0.6;
     }
+  }
+}
+@media screen and (max-width: 992px) {
+  .left {
+    display: none;
+  }
+  .icons {
+    display: flex !important;
+    align-items: center;
+    height: 3rem;
+    width: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100% !important;
+  }
+  .down {
+    flex-wrap: wrap;
+  }
 }

@@ -1,0 +1,86 @@
+<div class="ever">
+  <div class="picture">
+    @for(pic of photo; track pic.id; let i = $index){
+    <div class="photo">
+      <img [src]="pic.imgSrc" [alt]="pic.imgAlt" />
+    </div>
+    }
+    <div class="box">
+      <h3>Domain Names</h3>
+      <h2>Come For Just</h2>
+      <h2>$0.01 /1st yr</h2>
+      <h4>2-year purchase required*</h4>
+      <button mat-flat-button>Find Your Domain</button>
+      <p>Transfer Your Domains</p>
+      <span> Domains include free privacy protection forever </span>
+    </div>
+  </div>
+  <div class="table">
+    <table border="1">
+      <tr>
+        <th>Domains</th>
+        <th>SSL Security</th>
+        <th>Websites</th>
+        <th>WordPress</th>
+      </tr>
+      <tr>
+        <th>Email & Microsoft 365</th>
+        <th>Website Design Services</th>
+        <th>Online Store</th>
+        <th>Web Hosting</th>
+      </tr>
+    </table>
+  </div>
+  <div class="example">
+    <div class="left-box">
+      <h2 class="para">Success in 3 easy steps</h2>
+      <div class="pooster2">
+        <img src="/Image/web2.jpg" alt="example web" />
+        <span> 02 </span>
+        <h2>Save With the Lowest Fees</h2>
+        <p>
+          Enjoy the lowest transaction fees compared to other leading providers
+        </p>
+        <div class="btn">
+          <div class="example-button-row">
+            <button mat-flat-button class="b-t">Started Getting Paid</button>
+          </div>
+          <div class="example-button-row">
+            <button mat-button class="b-t2">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="pooster">
+        <img src="/Image/web4.jpg" alt="example web" />
+        <span> 01 </span>
+        <h2>Sell Online With a Website</h2>
+        <p>
+          Sell anything. from physical product to downloads and services and
+          manage it all in one place
+        </p>
+        <div class="btn">
+          <div class="example-button-row">
+            <button mat-flat-button class="b-t">Get Started</button>
+          </div>
+          <div class="example-button-row">
+            <button mat-button class="b-t2">Learn more</button>
+          </div>
+        </div>
+      </div>
+      <div class="pooster3">
+        <img src="/Image/web6.png" alt="example web" />
+        <span> 03 </span>
+        <h2>Sell in-person and on the go</h2>
+        <p>
+          Our new point of sale devices are designed to fit any business and
+          budget. Choose the one that right for you
+        </p>
+        <div class="example-button-row">
+          <button mat-flat-button>Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
