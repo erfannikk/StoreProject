@@ -1,0 +1,18 @@
+
+<div class="form-style">
+  <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label> name </mat-label>
+      <input matInput formControlName="firstname" name="firstname" type="text"/> 
+      <mat-error class="error-form" > لطفا نام خود را وارد کنید </mat-error>  
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+        <mat-label> Email </mat-label>
+        <input matInput formControlName="email" name="email" type="email"/>
+        <mat-error class="error-form" > لطفا ایمیل خود را وارد کنید </mat-error>
+      </mat-form-field>
+      
+      <button type="submit" mat-flat-button> Submit </button>
+  </form>
+</div>
