@@ -3,13 +3,30 @@
     <h2>Templates Designed To Sell</h2>
     <p>Choose from 100s of designs for every idea and industry</p>
   </div>
-  <div class="slider-container">
-    <div class="slider">
-      @for(pic of photo;track pic.id;let i = $index){
-      <img [src]="pic.srcImg" [alt]="pic.srcAlt" class="slider-image"/>
-      }
-    </div>
-  </div>
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" effect="fade"
+    navigation="true">
+    <swiper-slide>
+      <img src="/Image/webb.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="/Image/webb2.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="/Image/webb3.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="/Image/webb4.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="/Image/webb5.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="/Image/webb6.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="/Image/webb7.jpg" />
+    </swiper-slide>
+  </swiper-container>
   <div class="example-button-row">
     <button mat-flat-button>Browse All Templates</button>
   </div>

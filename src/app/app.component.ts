@@ -18,13 +18,5 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  photo = [
-    { id:1 ,srcImg:'/Image/webb.webp' ,srcAlt:'example web' },
-    { id:1 ,srcImg:'/Image/webb2.png' ,srcAlt:'example web' },
-    { id:1 ,srcImg:'/Image/webb3.png' ,srcAlt:'example web' },
-    { id:1 ,srcImg:'/Image/webb4.jpg' ,srcAlt:'example web' },
-    { id:1 ,srcImg:'/Image/webb5.webp' ,srcAlt:'example web' },
-    { id:1 ,srcImg:'/Image/webb6.png' ,srcAlt:'example web' },
-    { id:1 ,srcImg:'/Image/webb7.jpg' ,srcAlt:'example web' }
-  ]
+
 }
